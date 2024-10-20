@@ -1,0 +1,42 @@
+// CUSTOM DEFINED
+@import "./custom/index.scss";
+
+// FONT FAMILY
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"); /*Roboto Mono*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"); /*Noto Sans KR*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"); /*Nunito Sans*/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans KR";
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  color: black;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+div,
+img,
+aside,
+header,
+article,
+section,
+footer {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
