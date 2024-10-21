@@ -131,6 +131,16 @@
         font-size: 14px;
         font-weight: bold;
       }
+
+      .career-container {
+        .career-title {
+          font-weight: bold;
+        }
+
+        .career-content {
+          font-weight: bold;
+        }
+      }
     }
   }
 }
@@ -160,10 +170,20 @@
       .my-info {
         gap: 10px;
         font-size: 14px;
-        font-weight: bold;
+        font-weight: normal;
 
         align-items: center;
         margin-top: 35px;
+      }
+
+      .career-container {
+        .career-title {
+          font-weight: 500;
+        }
+
+        .career-content {
+          font-weight: normal;
+        }
       }
     }
   }

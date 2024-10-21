@@ -91,6 +91,7 @@ const copyKeyword = () => {};
 
     .contact-title {
       font-size: 30px;
+      font-size: 500;
     }
 
     .contact_content_wrap {

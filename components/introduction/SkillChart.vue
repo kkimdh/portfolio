@@ -81,7 +81,7 @@ const chartConfig = computed<ChartConfiguration>(() => ({
   type: "doughnut",
   data: data.value,
   options: {
-    // interaction: { mode: null as any },
+    interaction: { mode: null as any },
     plugins: {
       tooltip: {
         enabled: false,
@@ -117,6 +117,7 @@ const chartConfig = computed<ChartConfiguration>(() => ({
 
     .skill-chart-title {
       font-size: 14px;
+      font-weight: normal;
     }
   }
 }

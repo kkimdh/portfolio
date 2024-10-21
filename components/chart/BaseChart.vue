@@ -88,4 +88,13 @@ onUnmounted(() => {
   transform: translate(-50%, -50%);
   font-weight: bold;
 }
+
+@media (max-width: 600px) {
+  .chart-figure {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: normal;
+  }
+}
 </style>
