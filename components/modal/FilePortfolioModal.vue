@@ -57,10 +57,10 @@ const contentList = reactive({
       url: true,
     },
     {
-      title: "DH Art gallery",
-      subTitle: "(Portfolio 4)",
-      img: "portfolio_img_4",
-      router: "https://dohye-double-h-artgallery.netlify.app/",
+      title: "KBL Fantasy",
+      subTitle: "(Real Service)",
+      img: "kbl",
+      router: "https://fantasy.kbl.or.kr",
       url: true,
     },
     {
