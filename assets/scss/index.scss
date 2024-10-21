@@ -15,6 +15,15 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
+
+  // vercel toolbar 제거
+  .vercel-live-feedback-full-frame {
+    .dark-theme {
+      div {
+        display: none !important;
+      }
+    }
+  }
 }
 
 html {

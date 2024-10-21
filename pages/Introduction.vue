@@ -13,14 +13,14 @@
       <about-me></about-me>
 
       <div class="skill_chart_wrap d-flex align-items-center">
-        <skill-chart
+        <!-- <skill-chart
           v-for="skill in skillList.list"
           :key="`skill-${skill.id}`"
           :chart-id="`skill-${skill.id}`"
           :chart-data="skill.data"
           :chart-figure="skill.data"
           :chart-title="skill.id"
-        ></skill-chart>
+        ></skill-chart> -->
       </div>
 
       <contact></contact>
