@@ -2,7 +2,7 @@
   <div :class="`${props.chartId}-container p-relative`">
     <canvas :id="`${props.chartId}`"></canvas>
     <div v-show="props.chartFigure" class="chart-figure p-absolute">
-      <p>{{ props.chartFigure }}%</p>
+      <p>{{ props.chartFigure[0] }}%</p>
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@ const props = withDefaults(
     doughnutText?: boolean;
     chartData?: ChartData | null;
     chartConfig: ChartConfiguration;
-    chartFigure?: number;
+    chartFigure?: number[];
     width?: number | null;
     height?: number | null;
     position?: string | null;

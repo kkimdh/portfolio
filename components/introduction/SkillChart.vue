@@ -19,7 +19,7 @@ import BaseChart from "@/components/chart/BaseChart.vue";
 const props = defineProps<{
   chartId: string;
   chartData: ChartData | null;
-  chartFigure: number;
+  chartFigure: number[];
   chartTitle: string;
 }>();
 
@@ -62,12 +62,12 @@ const drawGradient = (
 
 const chartDataSets = computed<ChartDataset[]>(() => [
   {
-    data: [props.chartData] as number[],
+    data: props.chartData as number[],
     cutout: "70%",
     borderWidth: 0,
     backgroundColor: (_ctx: any): any => {
       const dataColor = drawGradient(_ctx, GRADIENT_COLORS);
-      return dataColor;
+      return [dataColor, "#ffffff"];
     },
   },
 ]);
@@ -88,12 +88,6 @@ const chartConfig = computed<ChartConfiguration>(() => ({
       },
       legend: {
         display: false,
-      },
-      scale: {
-        ticks: {
-          min: 0,
-          max: 100,
-        },
       },
     },
   },

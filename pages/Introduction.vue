@@ -13,14 +13,14 @@
       <about-me></about-me>
 
       <div class="skill_chart_wrap d-flex align-items-center">
-        <!-- <skill-chart
+        <skill-chart
           v-for="skill in skillList.list"
           :key="`skill-${skill.id}`"
           :chart-id="`skill-${skill.id}`"
           :chart-data="skill.data"
           :chart-figure="skill.data"
           :chart-title="skill.id"
-        ></skill-chart> -->
+        ></skill-chart>
       </div>
 
       <contact></contact>
@@ -65,12 +65,12 @@ const routerSkill = ref<boolean>(false);
 
 const skillList = reactive({
   list: [
-    { id: "HTML", data: 99 },
-    { id: "CSS / SCSS", data: 90 },
-    { id: "JAVASCRIPT", data: 90 },
-    { id: "VUE", data: 99 },
-    { id: "TYPESCRIPT", data: 80 },
-    { id: "NUXT JS", data: 90 },
+    { id: "HTML", data: [99, 1] },
+    { id: "CSS / SCSS", data: [99, 1] },
+    { id: "JAVASCRIPT", data: [95, 5] },
+    { id: "VUE", data: [99, 1] },
+    { id: "TYPESCRIPT", data: [85, 15] },
+    { id: "NUXT JS", data: [95, 5] },
   ],
 });
 
@@ -118,6 +118,17 @@ const titleBarText = computed(() => {
   }
 
   return "";
+});
+
+const chartData = ref({
+  labels: ["", ""],
+  datasets: [
+    {
+      label: "My Dataset",
+      backgroundColor: ["#FF6384", "#ffffff"],
+      data: [60, 40],
+    },
+  ],
 });
 
 watch(
