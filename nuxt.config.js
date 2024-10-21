@@ -1,9 +1,14 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
+  // ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  // target: "static",
+  target: "static", // 정적 사이트 배포 모드
+  ssr: false, // 클라이언트 사이드 렌더링
+  generate: {
+    fallback: true, // 404.html 생성 (SPA 모드)
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
