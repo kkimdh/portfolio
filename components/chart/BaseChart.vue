@@ -37,17 +37,6 @@ const props = withDefaults(
 );
 
 watch(
-  () => chart,
-  (c) => {
-    console.log(c, 123);
-  },
-  {
-    immediate: true,
-    deep: true,
-  }
-);
-
-watch(
   () => props.chartConfig,
   (v) => {
     if (v === null) {

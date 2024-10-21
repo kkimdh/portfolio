@@ -123,14 +123,16 @@ const titleBarText = computed(() => {
 watch(
   () => routerSkill.value,
   () => {
-    if (!windowInnerWidth.value || windowInnerWidth.value > 1100) {
-      gsap.to(window, { duration: 0.3, scrollTo: { y: 430 } });
-    }
-    if (windowInnerWidth.value <= 1100 && windowInnerWidth.value > 600) {
-      gsap.to(window, { duration: 0.3, scrollTo: { y: 600 } });
-    }
-    if (windowInnerWidth.value <= 600) {
-      gsap.to(window, { duration: 0.3, scrollTo: { y: 800 } });
+    if (routerSkill.value) {
+      if (!windowInnerWidth.value || windowInnerWidth.value > 1100) {
+        gsap.to(window, { duration: 0.3, scrollTo: { y: 430 } });
+      }
+      if (windowInnerWidth.value <= 1100 && windowInnerWidth.value > 600) {
+        gsap.to(window, { duration: 0.3, scrollTo: { y: 600 } });
+      }
+      if (windowInnerWidth.value <= 600) {
+        gsap.to(window, { duration: 0.3, scrollTo: { y: 800 } });
+      }
     }
   },
   {
