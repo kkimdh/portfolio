@@ -14,17 +14,17 @@
 
     <div class="about-me d-flex align-items-center justify-content-around">
       <div class="career-container">
-        <div class="career-title">Career / License</div>
+        <div class="career-title">Career</div>
         <div class="career-content d-flex flex-column">
-          <div class="career-period">2022.02 - 2024.08</div>
-          <div class="career-company">비투지 게임즈</div>
-          <div class="career-role">개발팀 / 프론트엔드</div>
+          <div class="career-period">2025.01 - 2025.08 (8개월)</div>
+          <div class="career-company">레디엔터테인먼트</div>
+          <div class="career-role">TMS개발팀 / 프론트엔드</div>
         </div>
 
         <div class="career-content d-flex flex-column">
-          <div class="career-period">2021.07</div>
-          <div class="career-company">웹디자인 기능사</div>
-          <div class="career-role">한국산업인력공단</div>
+          <div class="career-period">2022.02 - 2024.08 (2년 7개월)</div>
+          <div class="career-company">비투지 게임즈</div>
+          <div class="career-role">개발팀 / 프론트엔드</div>
         </div>
       </div>
 
