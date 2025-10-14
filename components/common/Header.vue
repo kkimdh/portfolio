@@ -2,7 +2,9 @@
   <div
     class="header_wrap d-flex justify-content-between align-items-center p-fixed"
   >
-    <div class="title">DOHYE'S PORTFOLIO</div>
+    <div class="title cursor-pointer" @click="router.push('/')">
+      DOHYE'S PORTFOLIO
+    </div>
     <div class="nav_right set-center">
       <div class="nav-icon wifi"></div>
       <div class="nav-icon search"></div>
@@ -16,11 +18,13 @@
 </template>
 
 <script setup lang="ts">
-import { watch, computed, ref } from "@nuxtjs/composition-api";
+import { watch, computed, ref, useRouter } from "@nuxtjs/composition-api";
 import dayjs from "dayjs";
 import "dayjs/locale/ko";
 
 const currentDate = ref<Date>(new Date());
+
+const router = useRouter();
 
 const currentTime = computed(() => {
   const daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
