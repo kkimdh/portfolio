@@ -108,7 +108,7 @@
       <img src="/image/main/ios.png" alt="ios" />
     </div>
 
-    <div
+    <!-- <div
       class="dock-icon contact"
       data-tooltip="CONTACT"
       @click="
@@ -119,7 +119,7 @@
     >
       <div v-if="contactHover" class="tooltip p-absolute">CONTACT</div>
       <img src="/image/main/contact.png" alt="contact" />
-    </div>
+    </div> -->
 
     <!-- <div class="dock-icon trashcan_1">
       <img src="/image/main/trashcan_1.png" alt="trashcan_1" />

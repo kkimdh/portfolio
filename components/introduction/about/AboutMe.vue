@@ -6,8 +6,8 @@
         <p>NAME : 김도혜 / KIM DO HYE</p>
         <p>BIRTH : 1999.01.07</p>
         <!-- <p>CAREER : 3년차 프론트엔드 개발자</p> -->
-        <p>PHONE : 010-4148-0297</p>
-        <p>E-MAIL : ehgpwkd@naver.com</p>
+        <!-- <p>PHONE : 010-4148-0297</p>
+        <p>E-MAIL : ehgpwkd@naver.com</p> -->
         <p>HOME : 경기도 안산시 / Ansan, Gyeonggi-do</p>
       </div>
     </div>

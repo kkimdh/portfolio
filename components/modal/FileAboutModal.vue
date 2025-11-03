@@ -39,11 +39,11 @@ const contentList = reactive({
       img: "skill",
       query: "skill",
     },
-    {
-      title: "Contact",
-      img: "contact_me",
-      query: "contact",
-    },
+    // {
+    //   title: "Contact",
+    //   img: "contact_me",
+    //   query: "contact",
+    // },
   ],
 });
 </script>

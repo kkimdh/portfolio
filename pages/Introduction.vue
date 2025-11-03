@@ -23,7 +23,7 @@
         ></skill-chart>
       </div>
 
-      <contact></contact>
+      <!-- <contact></contact> -->
     </div>
   </div>
 </template>
@@ -53,7 +53,7 @@ import AboutMe from "@/components/introduction/about/AboutMe.vue";
 
 import SkillChart from "~/components/introduction/SkillChart.vue";
 
-import Contact from "~/components/introduction/ContactMe.vue";
+// import Contact from "~/components/introduction/ContactMe.vue";
 
 const scrollPosition = ref();
 
@@ -84,9 +84,9 @@ const titleBarText = computed(() => {
       return "Skill";
     }
 
-    if (scrollPosition.value >= 915) {
-      return "Contact Me";
-    }
+    // if (scrollPosition.value >= 915) {
+    //   return "Contact Me";
+    // }
   }
 
   if (windowInnerWidth.value <= 1100 && windowInnerWidth.value > 600) {
@@ -98,9 +98,9 @@ const titleBarText = computed(() => {
       return "Skill";
     }
 
-    if (scrollPosition.value >= 980) {
-      return "Contact Me";
-    }
+    // if (scrollPosition.value >= 980) {
+    //   return "Contact Me";
+    // }
   }
 
   if (windowInnerWidth.value <= 600) {
@@ -112,9 +112,9 @@ const titleBarText = computed(() => {
       return "Skill";
     }
 
-    if (scrollPosition.value >= 1460) {
-      return "Contact Me";
-    }
+    // if (scrollPosition.value >= 1460) {
+    //   return "Contact Me";
+    // }
   }
 
   return "";
@@ -158,9 +158,9 @@ onMounted(() => {
       routerSkill.value = true;
     }
 
-    if ($route.value.query.category === "contact") {
-      gsap.to(window, { duration: 0.4, scrollTo: { y: "max" } });
-    }
+    // if ($route.value.query.category === "contact") {
+    //   gsap.to(window, { duration: 0.4, scrollTo: { y: "max" } });
+    // }
   }
 
   windowInnerWidth.value = window.innerWidth;
