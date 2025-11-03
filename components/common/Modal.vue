@@ -71,7 +71,7 @@ const menuList = reactive({
     { icon: "airdrop", title: "AirDrop" },
     { icon: "category", title: "최근 항목" },
     { icon: "document", title: "문서" },
-    { icon: "download", title: "다운로드" },
+    { icon: "downloadImg", title: "다운로드" },
   ],
 });
 
