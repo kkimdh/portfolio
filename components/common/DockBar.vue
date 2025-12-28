@@ -285,6 +285,10 @@ const onClickFinder = () => {
         display: none;
       }
 
+      &.takeim {
+        display: none;
+      }
+
       &.kbl,
       &.bao {
         width: 51px;
