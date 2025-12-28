@@ -14,7 +14,14 @@
 
     <div class="about-me d-flex align-items-center justify-content-around">
       <div class="career-container">
-        <div class="career-title">Career</div>
+        <!-- <div class="career-title">Career</div> -->
+
+        <div class="career-content d-flex flex-column">
+          <div class="career-period">2025 - (프로젝트)</div>
+          <div class="career-company">바오산전</div>
+          <div class="career-role">아임웹 기반 홈페이지 제작·운영</div>
+        </div>
+
         <div class="career-content d-flex flex-column">
           <div class="career-period">2025.01 - 2025.08 (8개월)</div>
           <div class="career-company">레디엔터테인먼트</div>
@@ -29,7 +36,7 @@
       </div>
 
       <div class="career-container">
-        <div class="career-title">Education</div>
+        <!-- <div class="career-title">Education</div> -->
         <div class="career-content d-flex flex-column">
           <div class="career-period">2021.03 - 2021.09</div>
           <div class="career-company">라인컴퓨터아트학원</div>

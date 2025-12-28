@@ -70,6 +70,13 @@ const contentList = reactive({
       router: "",
       url: false,
     },
+    {
+      title: "Bao Company",
+      subTitle: "(imweb)",
+      img: "bao",
+      router: "https://bao-company.imweb.me/",
+      url: true,
+    },
   ],
 });
 </script>

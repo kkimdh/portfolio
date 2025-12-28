@@ -49,11 +49,11 @@
       </a>
     </div>
 
-    <!-- <div class="dock-icon artgallery" data-tooltip="아트갤러리">
+    <div class="dock-icon artgallery" data-tooltip="아트갤러리">
       <a href="https://dohye-double-h-artgallery.netlify.app/" target="blank">
         <img src="/image/main/artgallery.png" alt="artgallery" />
       </a>
-    </div> -->
+    </div>
 
     <div
       class="dock-icon kbl"
@@ -64,6 +64,18 @@
       <a href="https://fantasy.kbl.or.kr/" target="blank">
         <div v-if="kblHover" class="tooltip kbl p-absolute">KBL판타지</div>
         <img src="/image/main/kbl-logo.png" alt="kbl-fantasy" />
+      </a>
+    </div>
+
+    <div
+      class="dock-icon bao"
+      data-tooltip="바오산전"
+      @mouseover="baoHover = true"
+      @mouseleave="baoHover = false"
+    >
+      <a href="https://bao-company.imweb.me/" target="blank">
+        <div v-if="baoHover" class="tooltip bao p-absolute">바오산전</div>
+        <img src="/image/main/bao-logo.png" alt="bao-company" />
       </a>
     </div>
 
@@ -139,6 +151,7 @@ const lieHover = ref<boolean>(false);
 const tekeimHover = ref<boolean>(false);
 const daHover = ref<boolean>(false);
 const kblHover = ref<boolean>(false);
+const baoHover = ref<boolean>(false);
 const emoticonHover = ref<boolean>(false);
 const aboutMeHover = ref<boolean>(false);
 const skillHover = ref<boolean>(false);
@@ -183,7 +196,8 @@ const onClickFinder = () => {
       transform: translateX(-50%);
       color: #000000 !important;
 
-      &.kbl {
+      &.kbl,
+      &.bao {
         bottom: 115%;
       }
     }
@@ -203,9 +217,11 @@ const onClickFinder = () => {
       height: 100%;
     }
 
-    &.kbl {
+    &.kbl,
+    &.bao {
       width: 45px;
       height: 45px;
+      margin: 0 1%;
 
       img {
         border-radius: 10px;
@@ -269,7 +285,8 @@ const onClickFinder = () => {
         display: none;
       }
 
-      &.kbl {
+      &.kbl,
+      &.bao {
         width: 51px;
         height: 53px;
         margin-left: 10px;
